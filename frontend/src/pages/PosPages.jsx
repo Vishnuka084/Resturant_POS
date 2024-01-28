@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
+import MainLayout from "../layouts/MainLayout";
 
 function PosPages() {
-    return(
 
-        <div>PosPages</div>
+        useEffect(()=>{
+
+        });
+    return(
+        <MainLayout>
+            POs
+        </MainLayout>
     )
 }
 
