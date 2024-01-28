@@ -1,8 +1,19 @@
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import HomePages from "./pages/HomePages";
+import PosPages from "./pages/PosPages";
+
 function App() {
   return (
-    <div className="App">
-      HEllo World
-    </div>
+    <Router>
+        <Routes>
+            <Route path="/" element={<HomePages/>}/>
+            <Route path="/pos" element={<PosPages/>}/>
+        </Routes>
+    </Router>
   );
 }
 
