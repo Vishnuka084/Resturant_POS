@@ -2,13 +2,12 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 function MainLayout({children}){
-    return(
-
+    return (
         <div>
             <header>
                 <nav className="navbar navbar-light bg-primary">
                     <div className="container">
-                        <Link to="/" className="navbar-brand" href="#">DevPos</Link>
+                        <Link to="/" className="navbar-brand">DevPOS</Link>
                     </div>
                 </nav>
             </header>
@@ -16,7 +15,7 @@ function MainLayout({children}){
                 <div className='container mt-3'>
                     {children}
                 </div>
-
+                <ToastContainer/>
             </main>
         </div>
     )
